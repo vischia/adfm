@@ -1,4 +1,4 @@
-# Análisis de Datos en Física Moderna, 2024-2025
+# Análisis de Datos en Física Moderna
     
 (c) Pietro Vischia (pietro.vischia@cern.ch)
 
@@ -12,13 +12,8 @@ If, for any reason, you cannot run the tutorial, you are welcome to just watch t
 
 #### 1. Check out the code
 ```
-git clone git@github.com:vischia/data_science_school_igfae2024.git
-cd data_science_school_igfae2024/
-```
-or
-```
-git clone https://github.com/vischia/data_science_school_igfae2024.git
-cd data_science_school_igfae2024/
+git clone git@github.com:vischia/adfm.git
+cd adfm/
 ```
 
 #### 2. Create a python environment and install requirements (follow one of the options 2.1, 2.2, or 2.3)
@@ -26,8 +21,8 @@ cd data_science_school_igfae2024/
 ##### 2.1 Using virtualenv
 
 ```
-virtualenv -p python3.9 venv_tutorial
-source venv_tutorial/bin/activate
+virtualenv -p python3.10 adfm_venv
+source adfm_venv/bin/activate
 pip install -r requirements.txt # or requirements_macos.txt on MacOS Monterey
 ```
 
@@ -38,9 +33,9 @@ To deactivate the environment, you should run `deactivate` from the command prom
 ##### 2.2 Using conda
 
 ```
-conda create --name venv_tutorial python==3.9.13
-conda activate venv_tutorial
-pip install -r requirements.txt # or requirements_macos.txt on MacOS Monterey
+conda create --name adfm_venv python==3.10
+conda activate adfm_venv
+conda install --file requirements.txt -c conda-forge -c pytorch -c nvidia -c scikit-learn
 ```
 
 To deactivate the environment, you should run `conda deactivate` from the command prompt.
