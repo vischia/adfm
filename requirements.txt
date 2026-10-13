@@ -6,6 +6,7 @@ numpy
 pandas
 pydotplus
 scikit_learn
+scikit-learn
 scipy
 seaborn
 shap
